@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emergency Service Directory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <img src="assets/logo.png" alt="Logo" class="logo" />
+      <div class="site-name">
+        <span>Emergency</span>
+        <span>Service</span>
+      </div>
+    </div>
+    <div class="nav-right">
+      <div class="nav-item heart" id="heartCount">
+        <img src="assets/heart.png" alt="Heart" class="icon" />
+        <span id="heartCountValue">0</span>
+      </div>
+      <div class="nav-item coin" id="coinCount">
+        <img src="assets/coin.png" alt="Coin" class="icon" />
+        <span id="coinCountValue">100</span>
+      </div>
+      <div class="nav-item copy" id="copyCount">
+        <span>0 Copy</span>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" role="banner" aria-label="Hero Section">
+    <img src="assets/logo-dark.png" alt="Government Logo" class="logo-hero" />
+    <h1>Emergency Service Directory</h1>
+    <p class="slogan">Government Emergency Services at Your Fingertip – A Project by Government of the People's Republic of Bangladesh</p>
+  </header>
+
+  <main>
+    <section class="cards-section" aria-label="Emergency Service Cards">
+      <!-- Cards will be inserted here by JS -->
+    </section>
+
+    <section class="history-section" aria-label="Call History Section">
+      <div class="history-header">
+        <div class="history-title">
+          <img src="assets/emergency.png" alt="History Icon" />
+          Call History
+        </div>
+        <button class="btn-clear-history" id="clearHistoryBtn" aria-label="Clear Call History">Clear</button>
+      </div>
+      <div class="history-list" id="historyList" role="list" aria-live="polite" aria-relevant="additions removals"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
