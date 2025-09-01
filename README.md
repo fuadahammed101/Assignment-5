@@ -1,6 +1,5 @@
 # Assignment-5
 
-# JavaScript DOM & Event Handling Concepts
 
 ## 1. Difference between `getElementById`, `getElementsByClassName`, and `querySelector` / `querySelectorAll`
 
@@ -31,7 +30,7 @@ An event that occurs on a child element **spreads to its parent elements** and e
 
 Attach an event listener to a **parent element** rather than each child element, and use `event.target` to handle events.
 
-✅ **Why useful?**
+ **Why useful?**
 
 * Improves **performance**
 * Handles **dynamically added elements** efficiently
@@ -40,7 +39,7 @@ Attach an event listener to a **parent element** rather than each child element,
 
 ## 5. Difference between `preventDefault()` and `stopPropagation()`
 
-* `preventDefault()` → prevents the **default browser actions** (e.g., stop form submit, stop link redirect).
+* `preventDefault()` → prevents the **default browser actions** (like: stop form submit, stop link redirect).
 * `stopPropagation()` → stops the event from **bubbling up** to parent elements.
 
 
